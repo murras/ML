@@ -21,8 +21,8 @@
 - 실제 데이터와 가설이 나타낸 데이터의 선과의 거리가 적은게 더 좋다.
 - (H(x)-y)^2
     - 항상 양수, 차이가 클 떄 더 큰 값.
-    - ((H(x1)-y1)^2+(H(x2)-y2)^2) / 2
-    
+
+ ![Image](https://i.imgur.com/mSxKIyy.png)
 ---
 ## lec 03 Linear Regression의 cost 최소화 알고리즘의 원리 설명
 
@@ -31,4 +31,4 @@
 - W-Cost의 그래프에서 경사도가(W)가 완만한 곳으로 옮겨간다.
 
 ### Convex function
-- cost-w-b의 그래프
+![Image](https://i.imgur.com/S5QSqPq.png)
