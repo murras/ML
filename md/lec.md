@@ -31,4 +31,4 @@
 - W-Cost의 그래프에서 경사도가(W)가 완만한 곳으로 옮겨간다.
 
 ### Convex function
-![Image](https://i.imgur.com/S5QSqPq.png)
+![Image](https://i.imgur.com/S5QSqPq.png ){: width="10" height="10"}

@@ -34,3 +34,6 @@ print(sess.run(adder_node, feed_dict={a: [1,3], b:[2,4]}))
 - y값 : 실제 데이터값
 
 - Variable: TensorFlow가 사용하는 variable, trainable한 변수.
+- W와 b의 값을 몰라서 random한 값을 준다.
+- tf.random_normal([1]) 
+    - [1]: 값이 하나인 1차원 Node.
