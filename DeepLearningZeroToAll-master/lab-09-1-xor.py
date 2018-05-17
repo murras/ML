@@ -29,7 +29,8 @@ hypothesis = tf.sigmoid(tf.matmul(X, W) + b)
 cost = -tf.reduce_mean(Y * tf.log(hypothesis) + (1 - Y) *
                        tf.log(1 - hypothesis))
 
-train = tf.train.GradientDescentOptimizer(learning_rate=learning_rate).minimize(cost)
+train = tf.train.GradientDescentOptimizer(
+    learning_rate=learning_rate).minimize(cost)
 
 # Accuracy computation
 # True if hypothesis>0.5 else False
@@ -44,8 +45,8 @@ with tf.Session() as sess:
     for step in range(10001):
         sess.run(train, feed_dict={X: x_data, Y: y_data})
         if step % 100 == 0:
-            print(step, sess.run(cost, feed_dict={
-                  X: x_data, Y: y_data}), sess.run(W))
+            print(step, "cost", sess.run(cost, feed_dict={
+                  X: x_data, Y: y_data}), "w", sess.run(W))
 
     # Accuracy report
     h, c, a = sess.run([hypothesis, predicted, accuracy],

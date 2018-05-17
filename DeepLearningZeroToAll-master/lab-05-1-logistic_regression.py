@@ -16,8 +16,8 @@ y_data = [[0],
           [1]]
 
 # placeholders for a tensor that will be always fed.
-X = tf.placeholder(tf.float32, shape=[None, 2])
-Y = tf.placeholder(tf.float32, shape=[None, 1])
+X = tf.placeholder(tf.float32, shape=[6, 2])
+Y = tf.placeholder(tf.float32, shape=[6, 1])
 
 W = tf.Variable(tf.random_normal([2, 1]), name='weight')
 b = tf.Variable(tf.random_normal([1]), name='bias')
