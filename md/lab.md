@@ -23,7 +23,7 @@ adder_node = a + b
 print(sess.run(adder_node, feed_dict={a: 3, b: 4.5}))
 print(sess.run(adder_node, feed_dict={a: [1,3], b:[2,4]}))
 ```
-- Rank : 배열의 차원
+- Rank : 배열의 차원 
 - Shape : 배열의 모양 ([2,3])
 - Type : float32, int32
 
