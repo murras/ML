@@ -47,9 +47,11 @@ n x n의 이미지에 f x f의 필터를 합성시키면 output은 (n-f+1) x (n-
 - Same Convolution : padding을 통해 input과 output의 크기를 같게 하는 방식.
     - padding size를 p라고 한다.
     - n x n = (n+2p-f+1) x (n+2p-f+1)
-    - p = (f-1)/2
+    >![Image](https://i.imgur.com/ewM4OzM.png)
     - padding의 크기와 중앙의 pixel이 명확해져서 filter의 크기를 주로 홀수로 사용한다.
 
 ### Strided Convolutions
-(n x n)*(f x f)에서 padding size: p, stride: s 크기로 (n-2p-f)/s + 1 x
-$$(X+1)$$
+
+(n x n)*(f x f)에서 padding size: p, stride: s 
+<img src="https://latex.codecogs.com/png.latex?\dpi{120}&space;\bg_white&space;\fn_phv&space;\large&space;\left&space;\lfloor&space;\frac{n-2p-f}{s}&plus;1&space;\right&space;\rfloor&space;x&space;\left&space;\lfloor&space;\frac{n-2p-f}{s}&plus;1&space;\right&space;\rfloor" title="\large \left \lfloor \frac{n-2p-f}{s}+1 \right \rfloor x \left \lfloor \frac{n-2p-f}{s}+1 \right \rfloor" />
+- stride로 인해 filter가 완전히 이미지 속에 들어가지 않고 걸친다면 계산하지 않는다.
