@@ -1,1 +1,0 @@
-[Coursera 강좌3, 4 Markdown](https://github.com/murras/markdown/tree/master/Coursera_ML_Andrew)
